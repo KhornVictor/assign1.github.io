@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+h1,p{
+    margin: 0px;
+}
+
+
+.about{
+    width: 98%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.about-card-holder{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+
+}
+
+.about-card{
+    width: 24%;
+    height: 500px;
+    filter: opacity(0.7);
+    transition: 0.5s;
+
+}
+@media (max-width:890px) {
+    .about-card{
+        width:49%
+
+    }
+}
+@media (max-width:500px){
+    .about-card{
+        width: 99%;
+    }
+}
+
+.about-card:hover{
+    filter: opacity(1);
+    transform: scale(1.05);
+}
+.about h1{
+    margin: 0px 0px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about p{
+    font-family: 'Oswald', sans-serif;
+    margin: 0px 20px 0px 20px;
+    font-size: 20px;
+    text-indent: 30px;
+    line-height: 30px;
+}
+
+.about-card div + h1{
+    margin: 0px 0px 0px 20px;}
+.about-card div + h1 + h1{
+    margin: 0px 0px 0px 25px;
+    color: rgb(63, 63, 63);
+}
+.about-card p{
+    margin: 15px 0px 0px 15px;
+    font-size: 18px;
+}
+
+.about-card div{
+    width: 100%;
+    height: 250px;
+}
+.about-card div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.CEOFOUNDER{
+    display: block;
+    font-size: 20px;
+    margin: 0px 0px 0px 30px;
+}
+
+.about-card button{
+    display: block;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    margin: auto; 
+    margin-top: 20px;
+    transition: 0.5s;
+    border: none;
+    background-color: rgb(147, 139, 139);
+}
+.about-card button div{
+    width: auto;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+   
+}
+.about-card button:hover{
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+.about-card button:hover div{
+    color: white;
+}
+
+.about-card button:focus{
+    outline: none;
+
+}
